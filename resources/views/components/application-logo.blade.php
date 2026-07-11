@@ -1,0 +1,1 @@
+<img src="{{ asset('assets/images/phronesis.jpg') }}" width="100px">

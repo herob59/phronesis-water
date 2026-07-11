@@ -1,0 +1,47 @@
+html,body{
+    background-color: #f7f7f7;
+    font-family: "Finlandica", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Finlandica", sans-serif;
+}
+
+label,p{
+    font-family: "Finlandica", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: "Finlandica", sans-serif;
+}
+
+.top-navbar{
+    background-color: #198754;
+}
+
+.top-navbar .list-group{
+    list-style: none;
+}
+.top-navbar .list-group li,
+.top-navbar .list-group li .top-nav-link{
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 6px 5px;
+    font-size: 14px;
+}
+
+.navbar .nav-link{
+    padding: 20px 6px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black !important;
+}
+.nav-btn{
+    background-color: #dc2126;
+    color: #fff;
+    font-size: 14px !important;
+    border-radius: 4px;
+    padding: 8px 12px !important;
+    font-weight: 600;
+}

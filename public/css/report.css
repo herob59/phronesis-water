@@ -1,0 +1,370 @@
+/* =====================================
+   REPORT MANAGEMENT STYLES
+======================================*/
+
+body{
+    background:#f4f7fb;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/*======================================
+PAGE HEADER
+======================================*/
+
+.page-title{
+    font-size:32px;
+    font-weight:700;
+    color:#2c3e50;
+}
+
+.page-subtitle{
+    color:#6c757d;
+    font-size:15px;
+}
+
+/*======================================
+CARDS
+======================================*/
+
+.card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.card-header{
+    background:#fff;
+    border-bottom:1px solid #ececec;
+    font-weight:600;
+}
+
+.card-body{
+    padding:25px;
+}
+
+/*======================================
+SUMMARY CARDS
+======================================*/
+
+.summary-card{
+
+    color:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.summary-card h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.summary-card h6{
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    opacity:.9;
+
+}
+
+.summary-card i{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+
+    font-size:50px;
+
+    opacity:.18;
+
+}
+
+/* Card Colors */
+
+.sales-card{
+
+    background:linear-gradient(135deg,#0d6efd,#4a8dff);
+
+}
+
+.production-card{
+
+    background:linear-gradient(135deg,#198754,#48c774);
+
+}
+
+.expense-card{
+
+    background:linear-gradient(135deg,#dc3545,#ff6b81);
+
+}
+
+.profit-card{
+
+    background:linear-gradient(135deg,#20c997,#4dd4ac);
+
+}
+
+.stock-card{
+
+    background:linear-gradient(135deg,#6f42c1,#9c6cff);
+
+}
+
+.order-card{
+
+    background:linear-gradient(135deg,#fd7e14,#ffb347);
+
+}
+
+.lowstock-card{
+
+    background:linear-gradient(135deg,#6610f2,#9d6bff);
+
+}
+
+/*======================================
+TABLE
+======================================*/
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#f8f9fa;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    font-weight:600;
+
+    color:#495057;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+    padding:16px;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f1f5ff;
+
+}
+
+/*======================================
+BADGES
+======================================*/
+
+.badge{
+
+    padding:8px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+}
+
+/*======================================
+BUTTONS
+======================================*/
+
+.btn{
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*======================================
+CHART CARD
+======================================*/
+
+.chart-card{
+
+    min-height:420px;
+
+}
+
+/*======================================
+LOW STOCK ALERT
+======================================*/
+
+.alert{
+
+    border-radius:15px;
+
+    border:none;
+
+    padding:18px;
+
+}
+
+/*======================================
+BEST SELLER
+======================================*/
+
+.best-product{
+
+    text-align:center;
+
+}
+
+.best-product img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+}
+
+/*======================================
+ANIMATIONS
+======================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:fadeIn .5s ease-in-out;
+
+}
+
+/*======================================
+PRINT
+======================================*/
+
+@media print{
+
+.sidebar,
+.navbar,
+.btn,
+footer{
+
+display:none !important;
+
+}
+
+body{
+
+background:white;
+
+}
+
+.card{
+
+box-shadow:none !important;
+
+border:1px solid #ddd;
+
+}
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+.summary-card{
+
+text-align:center;
+
+}
+
+.summary-card i{
+
+position:relative;
+
+display:block;
+
+right:0;
+
+top:0;
+
+margin-bottom:15px;
+
+opacity:.3;
+
+}
+
+.page-title{
+
+font-size:26px;
+
+}
+
+}

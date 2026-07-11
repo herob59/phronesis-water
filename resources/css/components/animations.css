@@ -1,0 +1,229 @@
+/* ==================================
+   GLOBAL TRANSITIONS
+================================== */
+
+* {
+    transition: all .3s ease;
+}
+
+
+/* ==================================
+   FADE UP ANIMATION
+================================== */
+
+.fade-up {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    animation: fadeUp 1s ease forwards;
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==================================
+   SCALE IN
+================================== */
+
+.scale-in {
+
+    animation: scaleIn .8s ease forwards;
+
+}
+
+
+@keyframes scaleIn {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ==================================
+   CARDS HOVER EFFECT
+================================== */
+
+
+.feature-card,
+.product-card {
+
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+
+}
+
+
+.feature-card:hover,
+.product-card:hover {
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+
+}
+
+
+/* ==================================
+   ICON ANIMATION
+================================== */
+
+
+.feature-card i,
+.product-card i {
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+.feature-card:hover i,
+.product-card:hover i {
+
+
+    transform:scale(1.2) rotate(5deg);
+
+
+}
+
+
+/* ==================================
+   STATISTICS
+================================== */
+
+
+.stat-box {
+
+
+    transition:.4s ease;
+
+
+}
+
+
+.stat-box:hover {
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+/* ==================================
+   BUTTON EFFECT
+================================== */
+
+
+.btn {
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.btn:hover {
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+/* ==================================
+   IMAGE EFFECT
+================================== */
+
+
+.product-card img {
+
+
+    transition:.5s ease;
+
+
+}
+
+
+
+.product-card:hover img {
+
+
+    transform:scale(1.08);
+
+
+}
+
+.feature-card:nth-child(1),
+.product-card:nth-child(1){
+
+animation-delay:.2s;
+
+}
+
+
+.feature-card:nth-child(2),
+.product-card:nth-child(2){
+
+animation-delay:.4s;
+
+}
+
+
+.feature-card:nth-child(3),
+.product-card:nth-child(3){
+
+animation-delay:.6s;
+
+}
